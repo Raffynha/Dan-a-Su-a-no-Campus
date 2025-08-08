@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dança Suça no Campus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dança Suça no Campus</h1>
+  </header>
+
+  <div class="tab-container">
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab('resumo')">Resumo</button>
+      <button class="tab-button" onclick="openTab('objetivos')">Objetivos</button>
+      <button class="tab-button" onclick="openTab('resultados')">Resultados</button>
+      <button class="tab-button" onclick="openTab('galeria')">Galeria</button>
+      <button class="tab-button" onclick="openTab('referencias')">Referências</button>
+    </div>
+
+    <div class="tab-content active" id="resumo">
+      <h2>Resumo</h2>
+      <p>
+        Este projeto de extensão propõe a realização de oficinas de Dança Suça no IFTO - Campus Dianópolis, Tocantins, visando à valorização da cultura afro-brasileira, à preservação do patrimônio imaterial e à promoção da identidade cultural entre estudantes, servidores e comunidade externa.
+      </p>
+      <p>
+        Enraizada nas memórias dos povos afrodescendentes, a Suça expressa resistência, ancestralidade e pertencimento. O projeto reconhece sua dimensão estética, política e espiritual, valorizando saberes tradicionais. Está alinhado à Agenda 2030 da ONU, com foco na promoção de uma educação inclusiva e de qualidade, na valorização da diversidade cultural como estratégia de combate às desigualdades e no fortalecimento de comunidades sustentáveis e conscientes de suas raízes.
+      </p>
+    </div>
+
+    <div class="tab-content" id="objetivos">
+      <h2>Objetivos</h2>
+      <p>
+        O objetivo geral do projeto é promover a difusão, valorização e preservação da Dança Suça como patrimônio imaterial da cultura afro-brasileira no Campus Dianópolis do IFTO, envolvendo a comunidade acadêmica e externa em ações de formação, fruição e produção cultural.
+      </p>
+      <p>
+        O projeto visa ainda fortalecer a identidade negra e quilombola, proporcionando espaços de expressão e reconhecimento da cultura afro-brasileira. Busca-se promover o acesso à cultura, contribuir para a autoestima dos participantes e para a formação cidadã, por meio da valorização dos saberes ancestrais, da memória coletiva e da resistência cultural.
+      </p>
+    </div>
+
+    <div class="tab-content" id="resultados">
+      <h2>Resultados Esperados</h2>
+      <p>
+        Espera-se ampliar o conhecimento e o reconhecimento da Dança Suça como expressão legítima da cultura afro-brasileira no Tocantins. Entre os resultados estão:
+      </p>
+      <ul>
+        <li>Fortalecimento das práticas culturais locais e das identidades negras e quilombolas;</li>
+        <li>Produção de cartilhas e vídeos educativos sobre a Dança Suça;</li>
+        <li>Valorização do IFTO como espaço de promoção cultural e memória ancestral;</li>
+        <li>Estímulo à autoestima, pertencimento e expressão artística dos participantes;</li>
+        <li>Realização de apresentações culturais e divulgação nas redes sociais e eventos acadêmicos.</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="gallery">
+        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 21.59.08_d05dcb81.jpg" alt="Dança Suça 1">
+        <img src="img/suca2.jpg" alt="Dança Suça 2">
+        <img src="img/suca3.jpg" alt="Dança Suça 3">
+      </div>
+    </div>
+
+    <div class="tab-content" id="referencias">
+      <h2>Referências</h2>
+      <p>
+        GLISSANT, Édouard. <em>Poética da relação</em>. <br>
+        HALBWACHS, Maurice. <em>A memória coletiva</em>. <br>
+        MENEZES, Roberta. <em>A Dança da Suça: identidade no quilombo de Chapada de Natividade</em>. <br>
+        RUFINO, Luiz. <em>Pedagogias das Encruzilhadas</em>. <br>
+        ROSA, Eloísa Marques. <em>A Suça em Natividade</em>. <br>
+        SANTOS, Inaicyra Falcão dos. <em>Corpo e ancestralidade</em>. <br>
+        SILVA, Sebastião de Sales; CHAVES, Sara. <em>Dança Suça no Tocantins</em>.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Projeto Dança Suça - IFTO Campus Dianópolis</p>
+  </footer>
+
+  <script>
+    function openTab(tabId) {
+      const buttons = document.querySelectorAll(".tab-button");
+      const contents = document.querySelectorAll(".tab-content");
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      document.getElementById(tabId).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+</html>
