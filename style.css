@@ -82,3 +82,20 @@ footer {
   margin-top: 40px;
   font-size: 1em;
 }
+/* Área do título e logos */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 80px; /* tamanho um pouco maior */
+  width: 80px;  /* altura e largura iguais para formar círculo */
+  object-fit: cover; /* garante que preencha todo o círculo */
+  border-radius: 50%; /* deixa redonda */
+  border: 3px solid #fff3e0; /* borda clara para destacar */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* leve sombra */
+}
