@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Dança Suça no Campus</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Dança Suça no Campus</h1>
     <div class="logo-container">
       <div class="logo-item">
-        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.20_70a7d1b0.jpg" alt="Logo IFTO-Campus Dianópolis">
+        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.20_70a7d1b0.jpg" alt="Logo IFTO-Campus Dianópolis" />
         <span>IFTO - Campus Dianópolis</span>
       </div>
       <div class="logo-item">
-        <img src="img/logo2.png" alt="Logo PROEX">
-        <span>PROEX</span>
-      </div>
-      <div class="logo-item">
-        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.20_8197e300.jpg" alt="Logo Suça Das Dianas">
+        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.20_8197e300.jpg" alt="Logo Suça Das Dianas" />
         <span>Suça Das Dianas</span>
       </div>
       <div class="logo-item">
-        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.21_aa673044.jpg" alt="Logo NEABI">
+        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 22.41.21_aa673044.jpg" alt="Logo NEABI" />
         <span>NEABI</span>
       </div>
     </div>
@@ -30,11 +26,11 @@
 
   <div class="tab-container">
     <div class="tabs">
-      <button class="tab-button active" onclick="openTab('resumo')">Resumo</button>
-      <button class="tab-button" onclick="openTab('objetivos')">Objetivos</button>
-      <button class="tab-button" onclick="openTab('resultados')">Resultados</button>
-      <button class="tab-button" onclick="openTab('galeria')">Galeria</button>
-      <button class="tab-button" onclick="openTab('referencias')">Referências</button>
+      <button class="tab-button active" onclick="openTab(event, 'resumo')">Resumo</button>
+      <button class="tab-button" onclick="openTab(event, 'objetivos')">Objetivos</button>
+      <button class="tab-button" onclick="openTab(event, 'resultados')">Resultados</button>
+      <button class="tab-button" onclick="openTab(event, 'galeria')">Galeria</button>
+      <button class="tab-button" onclick="openTab(event, 'referencias')">Referências</button>
     </div>
 
     <div class="tab-content active" id="resumo">
@@ -74,21 +70,26 @@
     <div class="tab-content" id="galeria">
       <h2>Galeria de Fotos</h2>
       <div class="gallery">
-        <img src="Imagem do WhatsApp de 2025-08-06 à(s) 21.59.08_d05dcb81.jpg" alt="Dança Suça 1">
-        <img src="img/suca2.jpg" alt="Dança Suça 2">
-        <img src="img/suca3.jpg" alt="Dança Suça 3">
+        <img src="Imagem1.jpg" alt="Dança Suça 1" />
+        <img src="Imagem2.jpg" alt="Dança Suça 2" />
+        <img src="Imagem3.jpg" alt="Dança Suça 3" />
+        <img src="Imagem4.jpg" alt="Dança Suça 4" />
+        <img src="Imagem5.jpg" alt="Dança Suça 5" />
+        <img src="Imagem6.jpg" alt="Dança Suça 6" />
+        <img src="Imagem7.jpg" alt="Dança Suça 7" />
+        <img src="Imagem8.jpg" alt="Dança Suça 8" />
       </div>
     </div>
 
     <div class="tab-content" id="referencias">
       <h2>Referências</h2>
       <p>
-        GLISSANT, Édouard. <em>Poética da relação</em>. <br>
-        HALBWACHS, Maurice. <em>A memória coletiva</em>. <br>
-        MENEZES, Roberta. <em>A Dança da Suça: identidade no quilombo de Chapada de Natividade</em>. <br>
-        RUFINO, Luiz. <em>Pedagogias das Encruzilhadas</em>. <br>
-        ROSA, Eloísa Marques. <em>A Suça em Natividade</em>. <br>
-        SANTOS, Inaicyra Falcão dos. <em>Corpo e ancestralidade</em>. <br>
+        GLISSANT, Édouard. <em>Poética da relação</em>. <br />
+        HALBWACHS, Maurice. <em>A memória coletiva</em>. <br />
+        MENEZES, Roberta. <em>A Dança da Suça: identidade no quilombo de Chapada de Natividade</em>. <br />
+        RUFINO, Luiz. <em>Pedagogias das Encruzilhadas</em>. <br />
+        ROSA, Eloísa Marques. <em>A Suça em Natividade</em>. <br />
+        SANTOS, Inaicyra Falcão dos. <em>Corpo e ancestralidade</em>. <br />
         SILVA, Sebastião de Sales; CHAVES, Sara. <em>Dança Suça no Tocantins</em>.
       </p>
     </div>
@@ -99,7 +100,7 @@
   </footer>
 
   <script>
-    function openTab(tabId) {
+    function openTab(event, tabId) {
       const buttons = document.querySelectorAll(".tab-button");
       const contents = document.querySelectorAll(".tab-content");
 
