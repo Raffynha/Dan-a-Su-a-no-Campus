@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <title>Dança Suça no Campus</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 <body>
   <header>
     <h1>Dança Suça no Campus</h1>
     <div class="logo-container">
       <div class="logo-item">
-        <img src="IFTO.png" alt="Logo IFTO-Campus Dianópolis" />
+        <img src="ifto orginal.png" alt="Logo IFTO-Campus Dianópolis" />
         <span>IFTO - Campus Dianópolis</span>
       </div>
       <div class="logo-item">
@@ -26,43 +27,50 @@
       <button class="tab-button" onclick="openTab(event, 'objetivos')">Objetivos</button>
       <button class="tab-button" onclick="openTab(event, 'resultados')">Resultados</button>
       <button class="tab-button" onclick="openTab(event, 'galeria')">Galeria</button>
+      <button class="tab-button" onclick="openTab(event, 'artigos')">Artigos</button>
       <button class="tab-button" onclick="openTab(event, 'referencias')">Referências</button>
     </div>
 
+    <!-- Resumo -->
     <div class="tab-content active" id="resumo">
       <h2>Resumo</h2>
       <p>
-        Este projeto de extensão propõe a realização de oficinas de Dança Suça no IFTO - Campus Dianópolis, Tocantins, visando à valorização da cultura afro-brasileira, à preservação do patrimônio imaterial e à promoção da identidade cultural entre estudantes, servidores e comunidade externa.
+        Este projeto de extensão propõe a realização de oficinas de Dança Suça no IFTO - Campus Dianópolis,
+        Tocantins, visando à valorização da cultura afro-brasileira, à preservação do patrimônio imaterial
+        e à promoção da identidade cultural entre estudantes, servidores e comunidade externa.
       </p>
       <p>
-        Enraizada nas memórias dos povos afrodescendentes, a Suça expressa resistência, ancestralidade e pertencimento. O projeto reconhece sua dimensão estética, política e educacional, valorizando saberes tradicionais. Está alinhado à Agenda 2030 da ONU, com foco na promoção de uma educação inclusiva e de qualidade, na valorização da diversidade cultural como estratégia de combate às desigualdades e no fortalecimento de comunidades sustentáveis e conscientes de suas raízes.
+        Enraizada nas memórias dos povos afrodescendentes, a Suça expressa resistência, ancestralidade e pertencimento.
+        O projeto reconhece sua dimensão estética, política e educacional, valorizando saberes tradicionais.
       </p>
     </div>
 
+    <!-- Objetivos -->
     <div class="tab-content" id="objetivos">
       <h2>Objetivos</h2>
       <p>
-        O objetivo geral do projeto é promover a difusão, valorização e preservação da Dança Suça como patrimônio imaterial da cultura afro-brasileira no Campus Dianópolis do IFTO, envolvendo a comunidade acadêmica e externa em ações de formação, fruição e produção cultural.
+        O objetivo geral do projeto é promover a difusão, valorização e preservação da Dança Suça
+        como patrimônio imaterial da cultura afro-brasileira no Campus Dianópolis do IFTO.
       </p>
       <p>
-        O projeto visa ainda fortalecer a identidade negra e quilombola, proporcionando espaços de expressão e reconhecimento da cultura afro-brasileira. Busca-se promover o acesso à cultura, contribuir para a autoestima dos participantes e para a formação cidadã, por meio da valorização dos saberes ancestrais, da memória coletiva e da resistência cultural.
+        O projeto visa ainda fortalecer a identidade negra e quilombola, proporcionando espaços
+        de expressão e reconhecimento da cultura afro-brasileira.
       </p>
     </div>
 
+    <!-- Resultados -->
     <div class="tab-content" id="resultados">
       <h2>Resultados Esperados</h2>
-      <p>
-        Espera-se ampliar o conhecimento e o reconhecimento da Dança Suça como expressão legítima da cultura afro-brasileira no Tocantins. Entre os resultados estão:
-      </p>
       <ul>
-        <li>Fortalecimento das práticas culturais locais e das identidades negras e quilombolas;</li>
-        <li>Produção de cartilhas e vídeos educativos sobre a Dança Suça;</li>
-        <li>Valorização do IFTO como espaço de promoção cultural e memória ancestral;</li>
-        <li>Estímulo à autoestima, pertencimento e expressão artística dos participantes;</li>
-        <li>Realização de apresentações culturais e divulgação nas redes sociais e eventos acadêmicos.</li>
+        <li>Fortalecimento das práticas culturais locais;</li>
+        <li>Produção de cartilhas e vídeos educativos;</li>
+        <li>Valorização do IFTO como espaço de promoção cultural;</li>
+        <li>Estímulo à autoestima, pertencimento e expressão artística;</li>
+        <li>Realização de apresentações culturais e divulgação em redes sociais.</li>
       </ul>
     </div>
 
+    <!-- Galeria -->
     <div class="tab-content" id="galeria">
       <h2>Galeria de Fotos</h2>
       <div class="gallery">
@@ -72,21 +80,43 @@
         <img src="Imagem4.jpg" alt="Dança Suça 4" />
         <img src="Imagem5.jpg" alt="Dança Suça 5" />
         <img src="Imagem6.jpg" alt="Dança Suça 6" />
-        <img src="Imagem7.jpg" alt="Dança Suça 7" />
-        <img src="Imagem8.jpg" alt="Dança Suça 8" />
+      </div>
+
+      <h2>Galeria de Vídeos</h2>
+      <div class="video-gallery">
+        <video controls>
+          <source src="Video1.mp4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
+        <video controls>
+          <source src="Video2.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
 
+    <!-- Artigos -->
+    <div class="tab-content" id="artigo">
+      <h2>Artigos</h2>
+      <div class="artigo">
+        <div class="artigo-texto">
+          <h3>DANÇA SUÇA NO CAMPUS: patrimônio, memória e identidade afrodescendente no IFTO - Campus Dianópolis</h3>
+          <p>
+            Este artigo apresenta reflexões sobre a Dança Suça como expressão de patrimônio cultural,
+            ressaltando sua memória coletiva e a identidade afrodescendente no contexto do IFTO - Campus Dianópolis.
+          </p>
+          <a href="ARTIGO JICE.pdf" target="_blank" class="botao-artigo">Ler Artigo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referências -->
     <div class="tab-content" id="referencias">
       <h2>Referências</h2>
       <p>
-        GLISSANT, Édouard. <em>Poética da relação</em>. <br />
-        HALBWACHS, Maurice. <em>A memória coletiva</em>. <br />
-        MENEZES, Roberta. <em>A Dança da Suça: identidade no quilombo de Chapada de Natividade</em>. <br />
-        RUFINO, Luiz. <em>Pedagogias das Encruzilhadas</em>. <br />
-        ROSA, Eloísa Marques. <em>A Suça em Natividade</em>. <br />
-        SANTOS, Inaicyra Falcão dos. <em>Corpo e ancestralidade</em>. <br />
-        SILVA, Sebastião de Sales; CHAVES, Sara. <em>Dança Suça no Tocantins</em>.
+        GLISSANT, Édouard. <em>Poética da relação</em>.<br />
+        HALBWACHS, Maurice. <em>A memória coletiva</em>.<br />
+        MENEZES, Roberta. <em>A Dança da Suça</em>.<br />
+        RUFINO, Luiz. <em>Pedagogias das Encruzilhadas</em>.
       </p>
     </div>
   </div>
@@ -96,16 +126,20 @@
   </footer>
 
   <script>
-    function openTab(event, tabId) {
-      const buttons = document.querySelectorAll(".tab-button");
-      const contents = document.querySelectorAll(".tab-content");
+    // Função simples para alternar abas
+    function openTab(evt, tabId) {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
 
-      buttons.forEach(btn => btn.classList.remove("active"));
-      contents.forEach(content => content.classList.remove("active"));
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(tc => tc.classList.remove('active'));
 
-      document.getElementById(tabId).classList.add("active");
-      event.currentTarget.classList.add("active");
+      evt.currentTarget.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+
+      document.getElementById(tabId).scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   </script>
 </body>
 </html>
+
